@@ -19,27 +19,66 @@
 <script src="./assets/js/navbar.js"></script>
 
 <body class="hero-section">
-    <header id="mainNav" class="py-3">
-        <div class="container d-flex align-items-center justify-content-center position-relative">
+    <header id="mainNav">
+    <nav class="navbar navbar-dark py-3">
+      <div class="container">
+        <div class="row align-items-center w-100">
 
-            <!-- Logo -->
-            <a href="/" class="position-absolute start-0 text-decoration-none fw-bold text-white">
-                MS Tech Support
-            </a>
+          <!-- MOBILE BAR (logo + burger alignés) -->
+          <div class="col-12 d-lg-none">
+            <div class="d-flex align-items-center justify-content-between">
+              <a class="navbar-brand fw-bold m-0" href="/">MS Tech Support</a>
 
-            <!-- Nav centrée -->
-            <ul class="nav" id="mainNavLinks">
-                <li id="naccueil" class="nav-item"><a href="index.html" class="nav-link px-3 link-secondary">Accueil</a></li>
-                <li id="napropos" class="nav-item"><a href="index.html#apropos" class="nav-link px-3 text-white">À propos</a></li>
-                <li id="ncontact" class="nav-item"><a href="index.html#contact" class="nav-link px-3 text-white">Contact</a></li>
-                <li id="nservices" class="nav-item"><a href="index.html#services" class="nav-link px-3 text-white">Services</a>
-                </li>
-                <li class="nav-item"><a href="https://anydesk.com/fr/downloads/"
-                        class="nav-link px-3 text-white">Support Anydesk</a></li>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNav"
+                aria-controls="mobileNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+
+          <!-- DESKTOP LOGO -->
+          <div class="col-lg-3 d-none d-lg-block">
+            <a class="navbar-brand fw-bold" href="/">MS Tech Support</a>
+          </div>
+
+          <!-- MENU DESKTOP -->
+          <div class="col-lg-9 d-none d-lg-flex justify-content-start">
+            <ul class="navbar-nav flex-row gap-3 ms-2">
+              <li class="nav-item"><a class="nav-link text-white" href="index.html#">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="index.html#apropos">À propos</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="index.html#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="index.html#contact">Contact</a></li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="https://anydesk.com/fr/downloads/">Support Anydesk</a>
+              </li>
             </ul>
-
+          </div>
         </div>
-    </header>
+
+        <!-- OFFCANVAS MOBILE (inchangé) -->
+        <div class="offcanvas offcanvas-end text-bg-dark mobile-nav" tabindex="-1" id="mobileNav"
+          aria-labelledby="mobileNavLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fw-bold" id="mobileNavLabel">MS Tech Support</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link text-white" href="index.html">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="index.html#apropos">À propos</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="index.html#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="index.html#contact">Contact</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="https://anydesk.com/fr/downloads/">Support
+                  Anydesk</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+  </header>
     <div class="container py-5 ">
         <!-- Section Présentation -->
         <h1 class="mb-3 fw-bold">Votre expert TI<br>​PME et particuliers</h1>
