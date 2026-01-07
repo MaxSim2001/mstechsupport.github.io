@@ -1,3 +1,4 @@
+console.log("navbar.js loaded");
 document.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('mainNav');
   if (!nav) return;
